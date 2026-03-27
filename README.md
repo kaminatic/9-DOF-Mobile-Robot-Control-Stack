@@ -4,7 +4,7 @@ This repository contains the software and firmware required to coordinate a **6-
 
 Motion files can be found here: https://doi.org/10.6084/m9.figshare.30625013
 
-## ⚙️ System Architecture
+## System Architecture
 
 The control stack is divided into two primary layers communicating via Serial at **115200 Baud**:
 1.  **Operator Interface (Python):** Processes user input, manages motion profile timing, and streams 10-degrees-of-freedom pose data.
@@ -12,7 +12,7 @@ The control stack is divided into two primary layers communicating via Serial at
 
 ---
 
-## 🤖 Firmware Technical Details (`robot_firmware.ino`)
+## Firmware Technical Details (robot_firmware.ino)
 
 ### 1. Kinematics & Platform Control
 * **6-DOF Stewart Platform:** The firmware calculates the required angle for each of the 6 servos to achieve a requested pose ($X, Y, Z, P, R, Y$).
@@ -27,7 +27,7 @@ The robot utilizes an HC-SR04 ultrasonic sensor for distance telemetry, subject 
 
 ---
 
-## 🖥️ Controller Technical Details (`controller.py`)
+## Controller Technical Details (controller.py)
 
 ### 1. Data Stream Protocol
 The controller streams a 10-float CSV packet to the hardware at ~100Hz. The stream follows this exact sequence:
@@ -43,7 +43,7 @@ The controller streams a 10-float CSV packet to the hardware at ~100Hz. The stre
 
 ---
 
-## 📂 Repository Contents
+## Repository Contents
 * `robot_firmware.ino`: Arduino C++ source code (Requires `Adafruit_MotorShield` and `Adafruit_PWMServoDriver` libraries).
 * `controller.py`: Python 3.x control interface (Requires `pyserial` and `pygame`).
 
