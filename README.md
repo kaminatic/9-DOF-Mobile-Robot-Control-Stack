@@ -4,6 +4,8 @@ This repository contains the software and firmware required to coordinate a **6-
 
 Motion files can be found here: https://doi.org/10.6084/m9.figshare.30625013
 
+![Robot Architecture](robotDesign.jpg)
+
 ## System Architecture
 
 The control stack is divided into two primary layers communicating via Serial at **115200 Baud**:
