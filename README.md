@@ -1,6 +1,6 @@
-# 6-DOF Mobile Robot Control Stack
+# 9-DOF Mobile Robot Control Stack
 
-This repository contains the software and firmware required to coordinate a **6-DOF Stewart Platform** and a **Mecanum drive** base. The system enables high-fidelity motion through a Master-Slave architecture, supporting both real-time teleoperation and timestamped gesture playback.
+This repository contains the software and firmware required to coordinate a **Stewart Platform** and a **Mecanum drive** base. The system enables high-fidelity motion through a Master-Slave architecture, supporting both real-time teleoperation and timestamped gesture playback.
 
 Motion files can be found here: https://doi.org/10.6084/m9.figshare.30625013
 
